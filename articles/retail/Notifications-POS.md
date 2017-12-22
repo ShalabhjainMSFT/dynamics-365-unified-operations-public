@@ -45,7 +45,7 @@ To enable notifications for the order fulfillment operations, refer to the follo
 > [!NOTE]
 > Notifications can be overridden at the user level by navigating to the worker's record and selecting **POS Permissions** and then editing that user's notification subscription.
 
- - Go to the **Functionality profile** page (**Retail** > **Channel setup** > **POS setup** > **POS profiles** > **Functionality profiles**). Update the **Notification interval** property, to set the interval in minutes at which the notifications should be pulled. We recommend setting this value to 10 minutes to avoid unnecessary communication to the headquarters. Setting the notification interval to "0" will turn off notifications.  
+ - Go to the **Functionality profile** page (**Retail** > **Channel setup** > **POS setup** > **POS profiles** > **Functionality profiles**). Update the **Notification interval** property, to set the interval in minutes at which the notifications should be pulled. For some notifications, the Point of Sale needs to make real-time calls to the back office application, which consumes compute capacity of your back office application. We recommend entering a number that meets your business requirements but also considers the impact of real-time calls. Setting the notification interval to "0" will turn off notifications.  
 
  - Go to **Retail** > **Retail IT** > **Distribution schedule**. Select schedule "1060-Staff" to sync notification subscription settings and then click **Run now**. Next, sync the permission interval by selecting the "1070-Channel configuration" and then click **Run now**. 
 
